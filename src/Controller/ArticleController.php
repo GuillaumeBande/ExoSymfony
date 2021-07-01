@@ -7,7 +7,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class PageController
+class ArticleController
 {
     //Je créé la "route" pour définir quel chemin http va prendre ma page
 /**
@@ -16,8 +16,7 @@ class PageController
     //Je créé la fonction Articles
     public function articles() {
         //Je retourne la réponse http du serveur au navigateur
-        return new Response(articles);
+        return new Response('articles');
     }
 }
 
-?>
