@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightslategray;
+
+}
+h1, h4, article{
+    text-align: center;
+}
+article {
+    display: inline-block;
+    border: solid 2px cornflowerblue;
+    border-radius: 10px;
+    width: 48%;
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+h4 {
+    color: red;
+}
+h1{
+    color: green;
+}
+.header {
+    height: 45px;
+    background-color: red;
+}
+.footer {
+    align-items: center;
+    height: 25px;
+    background-color: green;
+    margin-top: 5vh;
+}

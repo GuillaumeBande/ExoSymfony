@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,13 +10,25 @@
     <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 <body>
-<main class="block">
-    {% for articles in article %}
-        <article class="block">
+<header>
+    <div class="header">
+    <h1>Liste des différents articles</h1>
+    </div>
+</header>
+<main>
+
+    {% for article in articles %}
+        <article>
             <h2>{{ article.title }}</h2>
             <p>{{ article.content }}</p>
         </article>
     {% endfor %}
 </main>
+
 </body>
+<footer>
+    <div class="footer">
+    <h4>Fin des articles</h4>
+    </div>
+</footer>
 </html>
