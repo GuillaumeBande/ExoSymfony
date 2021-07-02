@@ -1,22 +1,49 @@
 <?php
 
-
 namespace App\Controller;
-
-
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ArticleController
+
+class ArticleController extends AbstractController
 {
-    //Je créé la "route" pour définir quel chemin http va prendre ma page
-/**
-* @Route("/articles", name="articles")
-*/
-    //Je créé la fonction Articles
-    public function articles() {
-        //Je retourne la réponse http du serveur au navigateur
-        return new Response('articles');
+    /**
+     * @Route("/articlelist", name="articlelist")
+     */
+    public function listeArticle()
+    {
+        //retourne une reponse http valide
+        return new Response('article');
     }
+    /**
+     * @Route("/article/{id}", name="articleshow")
+     */
+    public function articlesShow($id)
+    {
+        $articles = [
+            '1' => [
+                "title" => "Titre 1",
+                "content" => "blablabla",
+                "id" => 1
+            ],
+            '2' => [
+                "title" => "Titre 2",
+                "content" => "blablabla",
+                "id" => 2
+            ],
+            '3' => [
+                "title" => "Titre 3",
+                "content" => "blablabla",
+                "id" => 3
+            ]
+
+        ];
+
+        return $this->render('article_show.html.twig', [
+            'article' => $articles[$id]
+        ]);
+
 }
 
+}
