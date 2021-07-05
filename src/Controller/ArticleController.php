@@ -33,6 +33,18 @@ class ArticleController extends AbstractController
             "content" => "balblalblalb",
             "id" => 4,
             "published" => true
+        ],
+        5 => [
+            "title" => "Le PHP c'est trop génial",
+            "content" => "balblalblalb",
+            "id" => 5,
+            "published" => true
+        ],
+        6 => [
+            "title" => "Symfony c'est trop génial",
+            "content" => "balblalblalb",
+            "id" => 6,
+            "published" => true
         ]
     ];
 

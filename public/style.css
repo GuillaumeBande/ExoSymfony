@@ -1,14 +1,17 @@
 * {
     box-sizing: border-box;
+
 }
 
 .header {
+    text-align: center;
     height: 50px;
     width: 100%;
     background-color: lightcoral;
 }
 
 .footer {
+    text-align: center;
     height: 50px;
     width: 100%;
     background-color: lightcoral;
@@ -22,4 +25,8 @@
 .article {
     width: 50%;
     border: 1px solid black;
+}
+a {
+    text-decoration: none;
+    color: green;
 }
